@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Login Form</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        @import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('IMAGE/login1.jpg')  ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-box{
+            width: 280px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: whitesmoke;
+
+        }
+
+        .login-box h1{
+            float: left;
+            font-size: 40px;
+            /* border-bottom: 3px solid #638d68; */
+            border-bottom: 3px solid rgb(71, 71, 71);
+            margin-bottom: 40px;
+            padding: 10px 0;
+        }
+
+        .textbox{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 3px solid rgb(71, 71, 71);
+            
+        }
+
+        .textbox i {
+            width: 26px;
+            float: left;
+            text-align: center;
+            /* color: rgb(71, 71, 71); */
+
+        }
+
+        .textbox input{
+            border: none;
+            outline: none;
+            background: none;
+            color: white;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin:0 10px;
+        }
+
+        .btn{
+            width: 100%;
+            background: none;
+            border: 4px solid rgb(71, 71, 71);
+            color: white;
+            padding: 5px ;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+   <div class="login-box">
+       <h1>Login</h1>
+      
+       <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text " placeholder="username" name="" value="">
+
+    </div>
+
+    <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="password" name="" value="">
+
+    </div>
+
+    <input class="btn"  type="button" name="" value=" Sign in">
+
+   </div> 
+</body>
+</html>
